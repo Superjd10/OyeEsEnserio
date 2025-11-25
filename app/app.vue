@@ -16,13 +16,16 @@
     </div>
 
     <p class="copyright">
-      <span class="punctuation opening" :class="{ fading: isFading }">{{
-        openingSign
-      }}</span>
-      <span class="base-text">Es en serio</span>
-      <span class="punctuation closing" :class="{ fading: isFading }">{{
-        closingSign
-      }}</span>
+      <span class="base-text">Oye...</span>
+      <span class="animated-line">
+        <span class="punctuation opening" :class="{ fading: isFading }">{{
+          openingSign
+        }}</span>
+        <span class="base-text">Es en serio</span>
+        <span class="punctuation closing" :class="{ fading: isFading }">{{
+          closingSign
+        }}</span>
+      </span>
     </p>
   </div>
 </template>
@@ -339,8 +342,10 @@ onUnmounted(() => {
   white-space: nowrap;
   pointer-events: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.3rem;
 }
 
 .base-text {

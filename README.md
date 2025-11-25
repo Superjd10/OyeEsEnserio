@@ -1,4 +1,4 @@
-# Es en serio
+# Oye... Es en serio
 
 An interactive question-and-hint application built with Nuxt 3 and Vue 3. Features elegant typography, animated punctuation marks, and a sophisticated vintage aesthetic.
 
